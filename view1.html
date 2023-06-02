@@ -1,0 +1,6 @@
+<div data-ng-controller="SimpleController">
+    <input data-ng-model="search" />
+    <ul>
+      <li data-ng-repeat="o in names | filter:search">{{o.small}}</li>
+    </ul>
+  </div>

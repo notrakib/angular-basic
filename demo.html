@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-app="demoapp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <div style="background-color: rgb(174, 174, 200)" ng-view></div>
+    <div style="background-color: rgb(198, 234, 140)" ng-view></div>
+
+    <div data-ng-controller="SimpleController">
+      <input data-ng-model="new_alphabet.newCapital" />
+      <input data-ng-model="new_alphabet.newSmall" />
+      <button ng-click="click()">Add</button>
+    </div>
+    <script src="./jsfile.js"></script>
+  </body>
+</html>
+<!-- $scope.click = SimpleFactory.postAlphabet({
+
